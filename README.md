@@ -33,7 +33,7 @@ Al procesar el input, spaCy realiza un análisis morfológico que reduce las pal
 
 
 # Dificultad
-Respecto a la dificultad, el nivel de dificultad indica que tan “rebuscadas” son las pistas que se le daran al jugador, esto se mide por medio de zipf_frequency. El nivel de dificultad es solo un filtro, el cual hace que solo aparezcan las palabras que tengan una frecuencia de zipf mayor al nivel de dificultad, y ya despues se hace el ordenamiento de las pistas, de la menos a mas frecuente.
+Respecto a la dificultad, el nivel de dificultad indica que tan “rebuscadas” son las pistas que se le daran al jugador, esto se mide por medio de zipf_frequency. El nivel de dificultad es solo un filtro, el cual permite que aparezcan palabras que tengan una frecuencia de zipf mayor al nivel de dificultad, y ya después se hace el ordenamiento de las pistas, de la menos a mas frecuente.
 
 
 # Idiomas
