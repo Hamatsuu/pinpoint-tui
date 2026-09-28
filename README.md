@@ -1,10 +1,10 @@
 # Procesamiento de Lenguaje Natural
 
 # Equipo
-Maria Renata Borreguin Ortega
-Daniel Alberto Herrera Muñoz
-Eliberto Gutierrez Marin
-Ryou Ferdinand Hau Matsuura
+Maria Renata Borreguin Ortega  
+Daniel Alberto Herrera Muñoz  
+Eliberto Gutierrez Marin  
+Ryou Ferdinand Hau Matsuura  
 
 
 # Introducción
