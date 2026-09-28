@@ -5,6 +5,7 @@
   "main": "src/main.tsx",
   "type": "module",
   "scripts": {
+    "setup": "sh setup.sh",
     "start": "bun run src/main.tsx",
     "check": "tsc --noEmit"
   },

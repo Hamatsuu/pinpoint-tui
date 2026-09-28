@@ -8,6 +8,14 @@ import type {
   Language,
 } from "./types";
 import { resolve } from "path";
+import { existsSync } from "fs";
+
+function findPython(): string {
+  if (process.env.PYTHON_PATH) return process.env.PYTHON_PATH;
+  const venvPython = resolve(import.meta.dir, "../../.venv/bin/python3");
+  if (existsSync(venvPython)) return venvPython;
+  return "python3";
+}
 
 type ResponseResolver = (event: BackendEvent) => void;
 
@@ -28,7 +36,7 @@ export class GameClient {
   public async start(): Promise<void> {
     if (this.proc) return;
 
-    const pythonPath = process.env.PYTHON_PATH || "python3";
+    const pythonPath = findPython();
     const enginePath = resolve(
       import.meta.dir,
       "../../backend/game_engine.py"
