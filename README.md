@@ -29,7 +29,7 @@ Esta jerarquía hace que las pistas que se le otorgan al jugador mantengan una c
 # SpaCy
 
 Para la evaluación de los candidatos a respuesta que escribe el jugador, utilizamos la lematizacion avanzada utilizando spaCy.
-Al procesar el input, spaCy realiza un análisis morfológico que reduce las palabras a su lema. Esto garantiza que las conjugaciones funcionen y sean detectadas como la respuesta correcta.
+Al procesar el input, spaCy realiza un análisis morfológico que reduce las palabras a su lema. Esto garantiza que las conjugaciones funcionen y sean detectadas como la respuesta correcta. Cabe recalcar que SpaCy se utiliza solo para español, mientras que se utiliza el WorNetLemmatizer para el inglés.
 
 
 # Dificultad
