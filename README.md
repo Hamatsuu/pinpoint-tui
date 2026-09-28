@@ -51,4 +51,9 @@ python -m spacy download es_core_news_md
 # Ejecutas con 
 bun run src/main.tsx
 
+![q epico!](awesomewin.jpeg)
+
+
 ![win!!](win2.png)
+
+![win2 o 3?!](astroboy.jpeg)
