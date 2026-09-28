@@ -14,6 +14,7 @@ export interface I18nStrings {
   generatingGame: string;
   checkingGuess: string;
   gameNavHelp: string;
+  gameOverNavHelp: string;
 
   wonTitle: string;
   wonSubtitle: (clues: number) => string;
@@ -39,6 +40,7 @@ export const translations: Record<Language, I18nStrings> = {
     generatingGame: "Generando partida con WordNet...",
     checkingGuess: "Analizando respuesta...",
     gameNavHelp: "Enter: Enviar respuesta  •  Esc: Salir al Menú",
+    gameOverNavHelp: "Enter: Jugar otra  •  Esc: Salir al Menú",
 
     wonTitle: "¡CORRECTO!",
     wonSubtitle: (clues) =>
@@ -63,6 +65,7 @@ export const translations: Record<Language, I18nStrings> = {
     generatingGame: "Generating game from WordNet...",
     checkingGuess: "Evaluating guess...",
     gameNavHelp: "Enter: Submit Guess  •  Esc: Return to Menu",
+    gameOverNavHelp: "Enter: Play Again  •  Esc: Return to Menu",
 
     wonTitle: "CORRECT!",
     wonSubtitle: (clues) =>

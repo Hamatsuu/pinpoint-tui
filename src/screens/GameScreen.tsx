@@ -14,6 +14,7 @@ interface GameScreenProps {
   busyMessage?: string;
   onSubmitGuess: (guess: string) => void;
   onBackToMenu: () => void;
+  onPlayAgain: () => void;
   won: boolean;
   answer: string;
   gameOver: boolean;
@@ -28,6 +29,7 @@ export function GameScreen({
   busyMessage,
   onSubmitGuess,
   onBackToMenu,
+  onPlayAgain,
   won,
   answer,
   gameOver,
@@ -39,6 +41,8 @@ export function GameScreen({
   useKeyboard((key) => {
     if (key.name === "escape") {
       onBackToMenu();
+    } else if (gameOver && (key.name === "return" || key.name === "enter")) {
+      onPlayAgain();
     }
   });
 
@@ -203,7 +207,7 @@ export function GameScreen({
                 {won ? t.wonSubtitle(guesses.length) : t.lostSubtitle}
               </text>
             </box>
-            <text fg="#475569">{t.gameNavHelp}</text>
+            <text fg="#475569">{t.gameOverNavHelp}</text>
           </>
         ) : (
           <>

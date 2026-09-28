@@ -104,6 +104,7 @@ export function App() {
         busyMessage={busyMessage}
         onSubmitGuess={handleSubmitGuess}
         onBackToMenu={() => setScreen("menu")}
+        onPlayAgain={handleStartGame}
         won={won}
         answer={answer}
         gameOver={gameOver}
