@@ -1,0 +1,21 @@
+{
+  "name": "pinpoint-tui",
+  "version": "1.0.0",
+  "description": "Terminal User Interface clone of Pinpoint using OpenTUI, React, and Python",
+  "main": "src/main.tsx",
+  "type": "module",
+  "scripts": {
+    "start": "bun run src/main.tsx",
+    "check": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@opentui/core": "^0.5.12",
+    "@opentui/react": "^0.5.12",
+    "react": "^19.3.0"
+  },
+  "devDependencies": {
+    "@types/bun": "^1.2.0",
+    "@types/react": "^19.0.0",
+    "typescript": "^5.7.0"
+  }
+}
