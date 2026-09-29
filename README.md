@@ -43,10 +43,14 @@ El juego está configurado para jugar tanto con español como ingles. Para asegu
 # Para correrlo necesitas 
 Para correr el juego se necesita:
 
-bun, python3, nltk, spacy, wordfreq
+bun, python3, nltk, spacy, wordfreq, uv
 
-y ejecutar:
-python -m spacy download es_core_news_md
+y ejecutar:  
+```
+python -m spacy download es_core_news_md  
+./setup.sh
+```
+
 
 # Ejecutas con 
 bun run src/main.tsx
